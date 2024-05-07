@@ -64,3 +64,11 @@ Structure Panel Menu > Show Processing Instructions
 Make text anchors in source paragraph does not have any equivalent binding in DOM. Calling Document.createTOC() will ignore this setting even if it is set in the TOC style.
 
 Remove Forced Line Break -> same as above
+
+## The character (text) object
+
+The character (text) object lacks various glyph-related properties. We have ascent and descent. Missing properties are x-height, cap-height, left and right sidebearings.
+
+## Path point
+
+When you select a path point, app.selection[0] does not return that path point.
